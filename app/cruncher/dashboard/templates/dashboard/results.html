@@ -1,0 +1,18 @@
+{% extends "dashboard/_base.html" %}
+
+{% block pagetitle %}Results{% endblock %}
+
+{% block extrahead %}{% endblock %}
+
+{% block pageheader %}View Processing Results{% endblock %}
+
+{% block pagedescription %}View your results below.  These results will be removed after 7 days.{% endblock %}
+
+{% block content %}
+<p>Project Name: {{ client_request.project_name }}</p>
+<p>Requestor Email: {{ client_request.email }}</p>
+<p>Analysis: {{ client_request.analysis_type }}</p>
+{% block results %}Results{% endblock %}
+{% endblock %}
+
+{% block scripts %}{% endblock %}

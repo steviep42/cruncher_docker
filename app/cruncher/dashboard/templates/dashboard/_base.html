@@ -1,0 +1,19 @@
+<html>
+    <head>
+        {% spaceless %}
+        <title>
+            {% block title %}
+                {% block pagetitle %}{% endblock %} | Cruncher Data Processor
+            {% endblock %}
+        </title>
+        {% endspaceless %}
+        {% block extrahead %}{% endblock %}
+    </head>
+    <body> 
+        <h1>{% block pageheader %}{% endblock %}</h1>
+        <div>{% block pagedescription %}{% endblock %}</div>
+        <div>{% block content %}{% endblock %}</div>
+        <div>{% block footer %}{% endblock %}</div>
+        {% block scripts %}{% endblock %}
+    </body>
+</html>
